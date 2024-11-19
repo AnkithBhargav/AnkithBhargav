@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Generator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor-section">
+            <h2>JSON Schema Editor</h2>
+            <div class="json-editor-container">
+                <textarea id="jsonEditor" spellcheck="false"></textarea>
+                <div id="validationStatus" class="validation-status"></div>
+            </div>
+            <div id="jsonError" class="error-message"></div>
+        </div>
+
+        <div class="preview-section">
+            <h2>Form Preview</h2>
+            <div id="formPreview" class="form-preview">
+                <div class="placeholder-message">
+                    Enter valid JSON schema to preview form
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/formBuilder.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
